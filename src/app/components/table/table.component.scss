@@ -1,0 +1,12 @@
+table {
+    width: 90%;
+    height: 80%;
+
+    .table {
+        justify-self: unset;
+
+        .table-cells {
+            min-width: 48px;
+        }
+    }
+}
