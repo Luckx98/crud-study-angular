@@ -1,14 +1,15 @@
-.button {
-    background-color: var(--primary-color);
+.button-delete {
+    background-color: var(--color-red);
     color: var(--color-white);
 
+    width: 75px;
     height: 38px;
     border-radius: 6px;
     transition-duration: 0.4s;
     cursor: pointer;
 
-    &:enabled:hover {
-        background-color: var(--color-hover-button-create);
+    &:hover {
+        background-color: var(--color-hover-button-delete);
         color: var(--color-black);
     }
 }

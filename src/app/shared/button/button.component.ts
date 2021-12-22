@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-button',
@@ -7,6 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   @Input() content = 'Criar Novo Item';
+  @Input() width = "150px";
+  @Input() disabled = false;
+  @Output() buttonClick= new EventEmitter<MouseEvent>();
 
   constructor() { }
 

@@ -1,0 +1,40 @@
+<main class="main-container">
+    <app-default-card class="card-create" width="390px">
+        <div class="header">
+            <h1> {{formGroup.value.code | mask:'0000-000-000-0'}} </h1>
+            <p>Insira as novas informações do item</p>
+        </div>
+        <form class="inputs" [formGroup]="formGroup">
+            <!-- Product Name -->
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Nome do Produto</mat-label>
+                <input matInput placeholder="Digite o nome" formControlName="name">
+                <mat-icon class="icons" matPrefix>inventory_2_outlined</mat-icon>
+            </mat-form-field>
+            <!-- Value -->
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Valor</mat-label>
+                <input matInput mask="separator.2" thousandSeparator="." placeholder="valor a incrementar"
+                    formControlName="value">
+                <mat-icon class="icons" matPrefix>paid_outline</mat-icon>
+            </mat-form-field>
+            <!-- Type -->
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Tipo</mat-label>
+                <input matInput placeholder="Ex: Eletrônico/Brinquedo" formControlName="type">
+                <mat-icon class="icons" matPrefix>widgets_outlined</mat-icon>
+            </mat-form-field>
+            <!-- Quantity -->
+            <mat-form-field class="field" appearance="outline">
+                <mat-label>Quantidade</mat-label>
+                <input type="number" matInput placeholder="Quantidade em estoque" formControlName="quantity">
+                <mat-icon class="icons" matPrefix>stacked_bar_chart</mat-icon>
+            </mat-form-field>
+        </form>
+
+        <div class="footer">
+            <app-button-cancel routerLink="/" class="button-cancel"></app-button-cancel>
+            <app-button content="Editar item" class="button-edit" (click)="editProduct()"></app-button>
+        </div>
+    </app-default-card>
+</main>

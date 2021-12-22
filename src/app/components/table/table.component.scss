@@ -1,12 +1,10 @@
-table {
-    width: 90%;
+.table {
+    width: 100%;
     height: 80%;
 
-    .table {
-        justify-self: unset;
+    justify-self: unset;
 
-        .table-cells {
-            min-width: 48px;
-        }
+    .table-cells {
+        margin-left: 6px;
     }
 }

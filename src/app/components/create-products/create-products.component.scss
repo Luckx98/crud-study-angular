@@ -1,0 +1,52 @@
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--title-color);
+
+        margin-bottom: 48px;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .field {
+            width: 306px;
+            padding: 4px 0;
+
+            .icons {
+                color: var(--secundary-color);
+                padding-right: 18px;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+
+        .button-cancel {
+            padding: 0 20px;
+        }
+
+        .button-create {
+            margin-left: 13px;
+        }
+
+    }
+}

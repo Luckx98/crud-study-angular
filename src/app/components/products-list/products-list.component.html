@@ -1,0 +1,7 @@
+<main class="main-container">
+    <h1>Listagem de Produtos </h1>
+    <app-default-card>
+        <app-searchfield (applyFilter)="applyFilter($event)"></app-searchfield>
+        <app-table [dataSource]="dataSource" ></app-table>
+    </app-default-card>
+</main>

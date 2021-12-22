@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root {
     --primary-color: #38B88B;
     --secundary-color: #757575;
-    --title-color: #212121;
+    
     --color-white: #fff;
+    --color-black: #000; 
+    --color-red: #EA4D4D;
+
+    --title-color: #212121;
+    --border-card-color: #D5D5D5;
+
+    --color-hover-button-create: #42d6a2;
+    --color-hover-button-cancel: #c4c1c1;
+    --color-hover-button-delete: #ec7d7d;
 }
